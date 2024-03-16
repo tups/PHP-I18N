@@ -84,6 +84,8 @@ Prior to using your initial set of languages, you should ensure they’re instal
 $ locale -a
 ```
 
+Make sure to pay attention to the exact syntax of the locale names used by your operating system, especially with hyphens, underscores and suffixes, e.g. `en-US` vs `en_US`.
+
 If a certain locale is not installed yet, you can add it like the `es-AR` locale in the following example:
 
 ```bash
@@ -597,7 +599,7 @@ _($text);
 
 ### Extracting and updating translatable strings
 
-In order to extract all translatable strings from your PHP files, you can use the built-in tool for this task:
+In order to extract all translatable strings from your PHP files, you can use the built-in tool for this task. Again, make sure to pay attention to the exact syntax of the locale names used by your *operating system*, especially with hyphens, underscores and suffixes, e.g. `en-US` vs `en_US`. If you are not sure, check the output of the `locale -a` command on the CLI again.
 
 ```bash
 # For the `mr-IN` locale, with the default directory, with the default domain, and with fuzzy matching
